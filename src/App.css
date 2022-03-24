@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.card-container {
+  margin: 50px 0;
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(358px, 1fr));
+}
+
+.card-warning {
+  height: 85px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-close-button {
+  margin-bottom: 28px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

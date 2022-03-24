@@ -1,19 +1,12 @@
 import React from 'react';
+import CardModal from '../CardModal/CardModal';
 import './Header.css';
-import logo from '../../images/Logo.svg';
 
-const Header = () => {
+const Header = ({ cart }) => {
     return (
-        <div>
-            <nav className='header'>
-                <img src={logo} alt="" />
-                <div>
-                    <a href="/shop">Shop</a>
-                    <a href="/orders">Orders</a>
-                    <a href="/inventory">Inventory</a>
-                    <a href="/about">About</a>
-                </div>
-            </nav>
+        <div className='navbar'>
+            <h1>Kopa Samsu Store</h1>
+            <CardModal cart={cart} />
         </div>
     );
 };
